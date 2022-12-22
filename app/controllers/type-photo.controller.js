@@ -1,0 +1,1 @@
+const db = require("../config/database");exports.getTypePhoto = async (request, response) => {    const res = await db.query('SELECT * FROM photosession_type ORDER BY id');    response.status(200).json(res.rows);}

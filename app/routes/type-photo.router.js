@@ -1,0 +1,1 @@
+const express = require("express");const router =  express.Router();const typePhotoController = require('../controllers/type-photo.controller');router.get('/type-photosession', typePhotoController.getTypePhoto);module.exports = router;

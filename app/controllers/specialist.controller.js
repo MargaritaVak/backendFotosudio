@@ -1,0 +1,1 @@
+const db = require("../config/database");exports.getSpecialist = async (request, response) => {    const res = await db.query('SELECT * FROM specialist ORDER BY id');    response.status(200).json(res.rows);};

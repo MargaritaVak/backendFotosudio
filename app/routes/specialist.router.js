@@ -1,0 +1,1 @@
+const express = require("express");const router =  express.Router();const specialistController = require('../controllers/specialist.controller');router.get('/specialist',  specialistController.getSpecialist);module.exports = router;

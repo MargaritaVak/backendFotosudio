@@ -1,0 +1,1 @@
+const express = require("express");const router =  express.Router();const registrationController = require('../controllers/registration.controller');router.post('/register-client',registrationController.registerClient);module.exports = router;
